@@ -1,0 +1,90 @@
+<?php
+	session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ECOMMERCE WEBSITE</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<section class="header">
+		<div class="nav-bar">
+			<div class="logo">
+				<a href="index.html">MarkTech</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html" class="active">Products</a></li>
+					<li><a href="MARKTECH ABOUT US PAGE/about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+
+				</ul>
+			</div>
+			<div class="icons">
+				<u>
+					<li><a href="#"><i class="fa fa-sign-in">Sign in</i></a></li>
+					<li><a href="#"><i class="fa fa-shopping-cart">Cart</i></a></li>
+					<?php
+						$Email=$_SESSION['customerEmail'];
+						echo "<li><a><i>User Email: $Email</i></a></li>";
+					?>
+				</u>
+			</div>
+		</div>
+	</section>
+        <hr><h1>PRODUCTS</h1><hr>
+    <section class="row1">      
+        <div class="parts">
+            <a href="header.php"><img src="img/1.png" id="board"><br>
+            <span>GIGABYTE AORUS B550 Elite</span></a><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+        <div class="parts">
+            <a href="header.html"><img src="img/3.png"><br>
+            <span>Ryzen 3 3200g</span></a><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+        <div class="parts">
+            <a href="header.html"><img src="img/2.png"><br>
+            <span>Hyper X DDR4 Ram 8gb</span></a><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+        <div class="parts">
+            <img src="img/4.png"><br>
+            <span>ITX CPU CASE</span><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+    </section>
+    <section class="row2">      
+        <div class="parts">
+            <img src="img/5"><br>
+            <span>CORSAIR VS650</span><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+        <div class="parts">
+            <img src="img/6.jpg"><br>
+            <span>A4 Tech Keyboard Mouse Combo</span><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+        <div class="parts">
+            <img src="img/7.png"><br>
+            <span>Logitech Wired Zone</span><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+        <div class="parts">
+            <img src="img/monitor.png"><br>
+            <span>ASUS VZ249HEG1R Gaming Monitor</span><br>
+                <input class="btn" type="button" name="add" value="add to cart"></input>
+        </div>
+    </section>
+</body>
+</html> 

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+a, a:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu li{
+	display: inline-block;
+}
+
+.header{
+	width: 100%;
+	height: 20vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
+}
+
+.header .nav-bar{
+	width: 79%;
+	height: 80px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+
+}
+
+.header .nav-bar .logo{
+	margin-left: 50px;
+}
+
+.header .nav-bar .logo a{
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header .nav-bar .menu li{
+	margin-right: 30px;
+
+}
+
+.header .nav-bar .menu li a{
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 5px;
+	border-radius: 3px;
+	text-transform: capitalize;
+}
+
+.header .nav-bar .menu li a.active{
+	font-weight: 800;
+}
+
+.header .nav-bar .icons li{
+	display: inline-block;
+
+}
+
+.header .nav-bar .icons ul li{
+	margin-right: 25px;
+
+}
+
+.header .nav-bar .icons ul li a{
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.header .nav-bar .icons ul li i{
+	width: 50px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 19px;
+	transition: all 0.3s;
+
+}
+
+.header .hero{
+	width: 100%;
+}
+
+.header .hero .row{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex;
+	align-items: center;
+	padding-top: 10px;
+	margin: auto;
+}
+
+.header .hero .row .left-sec{
+	width: 100%;
+	margin-left: 50px;
+}
+
+.header .hero .row .left-sec .content{
+	padding-top: 1px;
+	line-height: 70px;
+}
+
+.header .hero .row .left-sec .content h2{
+	position: relative;
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.header .hero .row .left-sec .content h1{
+	font-size: 50px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.header .hero .row .left-sec .content h3{
+	font-size: 40px;
+	font-weight: 90;
+	letter-spacing: 1px;
+}
+
+.header .right-sec{
+	width: 60%;
+	padding-top: 40px;
+}
+
+.header .right-sec img{
+	height: 450px;
+	margin: auto;
+}
+
+
+
+section{
+	background-color: #ddd;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding: 0px 60px;
+}
+section .content{
+	flex: 2;
+	text-align: justify;
+	padding-right: 40px;
+}
+section content h2{
+	color: #000000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+section .content h4{
+	color: #8f8f8f;
+	margin-top: 5px;
+	font-size: 17px;
+	font-family: sans-serif; 
+}
+section .content .artical{
+	margin-top: 10px;
+}
+section .content .artical p{
+	color: #000000;
+	font-size: 16px;
+	font-family: verdana;
+}
+section .image-section{
+	flex: 1;
+	margin: auto;
+}
+section .image-section img{
+	width: 100%;
+	height: auto;
+}
+section .content .button{
+	margin-top: 20px;
+}
+section .content .button a{
+	color: #fff;
+	text-decoration: none;
+	background-color: #000000;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+}
+section .content .button a:hover{
+	background-color: #8f8f8f;
+	color: #000000;
+	transition: 0.5s ease;
+}
+section .social{
+	margin-top: 50px;
+}
+section .social a{
+	font-size: 24px;
+	color: #000000;
+	padding: 0px 8px;
+}
+section .social a:hover{
+	color: #8f8f8f;
+	transition: 0.5s ease;
+}
+@media screen and (max-width: 768px){
+	section{
+		flex-direction: column;
+		padding-top: 50px;
+	}
+	section .content{
+		text-align: center;
+		padding-right: 0px;
+
+	}
+	section .image-section{
+		margin-top: 20px;
+	}
+	section .social{
+		margin-top: 25px;
+		text-align: center;
+	}
+	section .social a{
+		font-size: 22px;
+	}
+}

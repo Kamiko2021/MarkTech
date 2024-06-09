@@ -1,0 +1,6 @@
+note: create a database named
+ ecom_store type is collated
+---------------------------------------
+
+copy and paste the code on ecom_store.txt on the created ecom_store database.
+
